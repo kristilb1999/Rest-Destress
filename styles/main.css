@@ -193,43 +193,49 @@ main.journals h1 {
     padding: .5em;
 }
 
-#activity_tracker {
+#tracker_list > li > a{
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.current_org {
     color: white;
 }
 
-#activity_list {
+#activity_list, #to-do_list, #mood_list, #achievement_list {
     float: left;
     border: 5px solid black;
     padding: 1.5em;
     margin: 2em;
 }
 
-#activity_list > li {
+#activity_list, #to-do_list, #mood_list, #achievement_list > li {
     border-bottom: 2px solid black;
     
 }
 
-#activity_form {
+#activity_form, #mood_form, #to-do_form, #achievement_form {
     padding: 1.5em;
 }
 
-#aName {
+#aName, #acName, #iName, #mName {
     padding: .5em;
 }
 
-#sDate {
+#sDate, #item_sDate, #ac_sDate {
     padding: .5em;
 }
 
-#eDate {
+#eDate, #item_eDate, #ac_eDate {
     padding: .5em;
 }
 
-#desc {
+#desc, #item_desc, #mood_desc, #ac_desc {
     padding: .5em;
 }
 
-#description {
+#description, #item_description,  {
     width: 500px;
     height: 100px;
 }

@@ -7,6 +7,7 @@
         <meta name="description" content="An interactive getting started guide for Brackets.">
         <link rel="stylesheet" href="styles/main.css">
     </head>
+    
     <body>
         <header>
         <a href="home.html"><img class="logo" src="images/title_logo.jpg" alt="A pile of white rocks followed by the page name: Rest and Destress"></a>
@@ -23,19 +24,52 @@
             </ul>
         </nav>
         
-        <main>
+        <main class="content_wrap">
             <ul id="tracker_list">
-                <li><a href="organizational_pages/to-do.html">To-do list</a></li>
+                <li><a class="current_org" href="organizational_pages/to-do.html">To-do list</a></li>
                 <li><a href="organizational_pages/mood.html">Mood tracker</a></li>
                 <li><a href="organizational_pages/activity.html">Activity Tracker</a></li>
                 <li><a href="organizational_pages/acheivement.html">Achievement Tracker</a></li>
             </ul>
             
+            <div>
+                <ol id="to-do_list">
+                    <li>Item One</li>
+                    <li>Item Two</li>
+                    <li>Item Three</li>
+                </ol>
+            </div>
+            
+            <form id="to-do_form">
+                <fieldset id="add_item">
+                    <legend>Add New Item</legend>
+                    <div id="iName">
+                    <label for="item_name">Item Name:</label>
+                    <input type="text" name="item_name" id="item_name">
+                    </div>
+                    <div id="item_sDate">
+                    <label for="item_start_date">Start Date:</label>
+                    <input type="date" name="item_start_date" id="item_start_date">
+                    </div>
+                    <div id="item_eDate">
+                    <label for="item_end_date">End date:</label>
+                    <input type="date" name="item_end_date" id="item_end_date">
+                    </div>
+                    <div id="item_desc">
+                    <label for="item_description">Item Description:</label>
+                    <input type="text" name="item_description" id="item_description">
+                    </div>
+                    <div id="item_sButton">
+                    <input type="submit" id="item_submit" value="Submit">
+                    </div>
+                </fieldset>
+            </form>
         </main>
         
         <footer>
-            <p>The smaller nav bar on the side would be made clickable and bring the user to the page that they would like to use.</p>
+            
         </footer>
     
     </body>
+    
 </html>

@@ -1,7 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    align-content: center;
 }
+
+
 
 nav > ul {
     margin: 0;
@@ -51,13 +54,17 @@ img.logo {
 
 body {
     background-color: #fff;
+    position: relative;
+    min-height: 100vh;
 }
 
 section#self_help_tips {
     float: left;
     padding: 2em;
+    margin: 2em;
     border: 1px solid black;
-    width: 675px;
+    width: 700px;
+    height: 400px;
 }
 
 section#self_help_tips h2 {
@@ -74,6 +81,8 @@ section#quick_relaxation_tips {
     padding: 2em;
     border: 1px solid black;
     width: 700px;
+    margin: 2em;
+    height: 400px;
 }
 
 section#quick_relaxation_tips h2 {
@@ -154,10 +163,6 @@ main.journals h1 {
     padding: .5em;
 }
 
-#read_blog {
-    color: white;
-}
-
 #blog_post_1 {
     float: right;
     padding: 2em;
@@ -199,7 +204,7 @@ main.journals h1 {
     
 }
 
-.current_org {
+.current_org, .current_com {
     color: white;
 }
 
@@ -235,17 +240,30 @@ main.journals h1 {
     padding: .5em;
 }
 
-#description, #item_description,  {
+#description, #item_description, #m_description, #ac_description {
     width: 500px;
     height: 100px;
 }
 
-#sButton {
+#sButton, #a_sButton, #ac_sButton, #item_sButton {
     padding: .5em;
+}
+
+.content_wrap {
+    padding-bottom: 3em;
+}
+
+#writing_caption {
+    clear: both;
+    padding: 2em;
+    color: black;
 }
 
 footer {
     padding: 2em;
     background-color: #D4B1F2;
     clear: both;
+    position: absolute;
+    width: 96.65%;
+    bottom: 0;
 }

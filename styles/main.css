@@ -258,6 +258,18 @@ main.journals h1 {
     color: black;
 }
 
+div > h2 {
+    padding: .5em;
+    font-size: 2em;
+}
+
+#main_video {
+    width: 45%;
+    height: 40em;;
+    margin: 0 auto;
+    display: block;
+}
+
 footer {
     padding: 2em;
     background-color: #D4B1F2;

@@ -4,7 +4,9 @@
     align-content: center;
 }
 
-
+.incomplete_journal {
+    background-image: url(../images/currently_unavailable.jpg)
+}
 
 nav > ul {
     margin: 0;
@@ -158,18 +160,16 @@ main.journals h1 {
 }
 
 #blog_post_1 {
-    float: right;
-    padding: 2em;
+    padding: 1em;
+    font-size: 2em;
 }
 
 #blog_post_1 img{
     height: 12em;
-    float: left;
+    display: block;
+    margin: 0 auto;
 }
 
-#author {
-    padding-top: 13em;
-}
 
 #title {
     text-align: center;
@@ -243,8 +243,14 @@ main.journals h1 {
     padding: .5em;
 }
 
-.content_wrap {
-    padding-bottom: 3em;
+#profilePic {
+    float: left;
+}
+
+.profile_info {
+    padding: 1em;
+    float: left;
+    font-size: 1.5em;
 }
 
 .org_heading {
@@ -270,11 +276,28 @@ div > h2 {
     display: block;
 }
 
+.suggested_videos {
+    width: 15%;
+    height: 15em;
+    padding: .5em;
+}
+
+#browse_videos {
+    padding-bottom: 5em;
+}
+
+.more_videos {
+    width: 15%;
+    height: 15em;
+    padding: .5em;
+}
+
 footer {
     padding: 2em;
     background-color: #D4B1F2;
     clear: both;
-    position: relative;
+    position: absolute;
     width: 96.65%;
+    height: 1rem;
     bottom: 0;
 }
